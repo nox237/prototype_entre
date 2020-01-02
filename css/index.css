@@ -1,0 +1,39 @@
+body {
+	width: 100%;
+	height: 100vh;
+}
+div#landing-page {
+	height: 90vh;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: blue;
+}
+
+div#landing-page content {
+	color: white;
+	text-align: center;
+	width: 50%;
+}
+
+div#landing-page content h1 {
+	font-size: 3em;
+	font-weight: bold;
+}
+
+div#landing-page content p {
+	font-size: 1em;
+}
+
+div#comments {
+	height: 100vh;
+	width: 100%;
+}
+
+@media only screen and (max-width:720px){
+	div#landing-page {
+		height: 100vh;
+		width: 100%;
+	}
+}
