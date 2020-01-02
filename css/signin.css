@@ -1,0 +1,38 @@
+* {
+	margin:0;
+	padding:0;
+}
+
+body {
+	width: 100%;
+	height: 100vh;
+}
+
+.text-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+form.form-signin > * {
+	margin-bottom: 1em;
+}
+
+body div h1 {
+	margin-bottom: 2em;
+}
+
+.fb {
+  background-color: #3B5998;
+  color: white;
+}
+
+.twitter {
+  background-color: #55ACEE;
+  color: white;
+}
+
+.google {
+  background-color: #dd4b39;
+  color: white;
+}
