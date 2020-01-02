@@ -8,18 +8,37 @@ body {
 	height: 100vh;
 }
 
-.text-center {
+div.text-center {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	width: 100%;
+	height: 100vh;
+}
+
+.landing {
+	background: black;
+	width: 100%;
+	height: 100vh;
 }
 
 form.form-signin > * {
 	margin-bottom: 1em;
 }
 
-body div h1 {
-	margin-bottom: 2em;
+content {
+	text-align: left;
+	color: white;
+}
+
+content h1 {
+	font-weight: 50;	
+}
+
+content h1.title {
+	font-weight: 700;
+	font-size: 5em;
+	margin-bottom: 0;
 }
 
 .fb {
@@ -35,4 +54,14 @@ body div h1 {
 .google {
   background-color: #dd4b39;
   color: white;
+}
+
+@media only screen and (max-width: 750px){
+	.responsive-login{
+		padding-top: 3em;
+	}
+	.row {
+		margin-right: 0;
+		margin-left: 0;
+	}
 }
