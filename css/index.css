@@ -8,7 +8,11 @@ div#landing-page {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-color: blue;
+	background-color: rgba(0,0,0,0.6);
+	background-image: url('../img/study.jpeg');
+	background-blend-mode: darken;
+	background-size: cover;
+	background-position: center;
 }
 
 div#landing-page content {
@@ -26,14 +30,72 @@ div#landing-page content p {
 	font-size: 1em;
 }
 
-div#comments {
-	height: 100vh;
+div#landing-page content button {
+	max-width: 10em;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div#about {
+	text-align: center;
 	width: 100%;
+	height: 100vh;
+}
+
+div#about div h1{
+	font-weight: bold;
+}
+
+div#promote {
+	height: 40vh;
+	width: 100%;
+	background-color: #151719;
+	text-align: center;
+	font-family: sans-serif;
+	color: white;
+}
+
+div#promote div button {
+	max-width: 10em;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div#landing-page div button {
+	max-width: 10em;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div#teacher {
+	height: auto;
+	width: 100%;
+	text-align: center;
+}
+
+div#teacher div div div button{
+	max-width: 10em;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+footer {
+	height: 50vh;
+	width: 100%;
+	background-color: #151719;
 }
 
 @media only screen and (max-width:720px){
 	div#landing-page {
 		height: 100vh;
+		width: 100%;
+	}
+	div#landing-page content button {
+		width: 100%;
+		max-width: 100%;
+	}
+	div#teacher {
+		height: auto;
 		width: 100%;
 	}
 }

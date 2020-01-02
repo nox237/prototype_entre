@@ -10,11 +10,16 @@ nav {
 	background:#151719;
 }
 
-nav div#burger-btn {
+nav#sidebar div.container{
+	width: 100%;
+	height: 100%;
+}
+
+nav div.container div#burger-btn {
 	display: none;
 }
 
-nav div#logo{
+nav div.container div#logo{
 	float: left;
 	color: white;
 	font-size: 1.75em;
@@ -23,10 +28,9 @@ nav div#logo{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding-left: 2em;
 }
 
-nav ul {
+nav div.container ul {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -35,47 +39,63 @@ nav ul {
 	margin: 0;
 }
 
-nav ul li {
+nav div.container ul li {
 	display: inline-block;
 	color: rgba(230,230,230,0.9);
 	list-style: none;
 	font-size: 1.25em;
 	font-weight: bold;
-	padding-right: 2em;
+	padding-left: 1em;
+}
+
+nav div.container ul li a {
+	color: rgba(230,230,230,0.9);
+	text-decoration: none;
 }
 
 @media only screen and (max-width:720px){
 	nav {
-		position:absolute;
+		position:fixed;
 		width: 200px;
 		height: 100vh;
 		background:#151719;
 		left: -200px;
 	}	
-	nav.active {
-		position:absolute;
-		left: 0px;
+
+	nav div.container {
+	  width: 100%;
+	  padding-right: 0;
+	  padding-left: 0;
+	  margin-right: 0;
+	  margin-left: 0;
 	}
 
-	nav div#burger-btn {
-		position: absolute;
+	nav.active {
+		position:fixed;
+		left: 0px;
+		height: auto;
+	}
+
+	nav div.container div#burger-btn {
+		position: fixed;
 		display: block;
-		left: 230px;
+		left: 30px;
 		top: 20px;
 		font-weight: bold;
 	}
 
-	nav div#logo {
+	nav div.container div#logo {
 		display: none;
 	}
 
-	nav ul {
+	nav.active div.container ul {
 		display: block;
 		float: left;
 		width: 100%;
+		height: 100vh;
 	}
 
-	nav ul li {
+	nav div.container ul li {
 		color: rgba(230,230,230,0.9);
 		list-style: none;
 		padding: 5% 4%;
@@ -86,7 +106,10 @@ nav ul li {
 		font-weight: normal;
 	}
 
-	nav.active ul li {
+	nav.active div.container ul li {
 		display: block;
+	}
+	nav.active div.container div#burger-btn {
+		left: 230px;
 	}
 }

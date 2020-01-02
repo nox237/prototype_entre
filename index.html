@@ -8,28 +8,70 @@
     <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom styles-->
     <link rel="stylesheet" type="text/css" href="./css/nav.css">
-    <link href="./css/index.css" rel="stylesheet">
+    <link href="./css/index.css" type="text/css" rel="stylesheet">
     <script type="text/javascript" src="./js/nav.js"></script>
 </head>
 <body>
-	<nav id="sidebar">
-		<div id="burger-btn" onclick="toggleSidebar()">&#9776;</div>
-		<div id="logo">TeachMe</div>
-		<ul>
-			<li>Home</li>
-			<li>About</li>
-			<li>Contact</li>
-		</ul>
+	<nav id="sidebar" >
+		<div class="container">
+			<div id="burger-btn" onclick="toggleSidebar()">&#9776;</div>
+			<div id="logo">TeachMe</div>
+			<ul>
+				<li>Home</li>
+				<li><a href="./login.html">Login</a></li>
+				<li>About</li>
+				<li>Contact</li>
+			</ul>
+		</div>
 	</nav>
 	<div id="landing-page">
 		<content>
 			<h1>Start Courses Today</h1>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-			<button>Signup now</button>
+			<button class="btn btn-lg btn-success btn-block">Signup now</button>
 		</content>
 	</div>
-	<div id="comments">
-		
+	<div id="about">
+		<div class="container pt-5 pb-5">
+			<h1 class="mb-3">About us</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
 	</div>
+	<div id="promote">
+		<div class="container pt-3 pb-3">
+			<h1>Try Free Trial</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat.</p>
+			<button class="btn btn-lg btn-success btn-block">Try now</button>
+		</div>
+	</div>
+	<div id="teacher">
+		<div class="container">
+			<div class="row pt-5 pb-5">
+				<div class="col-md">
+					<h1>Become a teacher</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<button class="btn btn-lg btn-primary btn-block">Start teaching</button>
+				</div>
+				<div class="col-md">
+					<img src="./img/teacher.jpeg" style="width: 100%;height: auto;">
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer>
+		
+	</footer>
 </body>
 </html>
