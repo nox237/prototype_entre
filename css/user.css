@@ -1,0 +1,127 @@
+.row {
+	width: 100%;
+	height: 100%;
+}
+
+#profile{
+	width: 100%;
+	height: 60vh;
+	/*background-color: green;*/
+	/*display: none;*/
+}
+
+div#profile div.row div.col-md.picture {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+div#profile div.row div.col-md.info {
+	display: block;
+	margin-top: auto;
+	margin-bottom: auto;
+	/*padding-left: 5em;*/
+
+	/*border: 5px solid black;
+	border-radius: 15px;*/
+}
+
+div#profile div.row div.col-md.info h1{
+	font-weight: bold;
+	color: blue;
+	text-align: center;
+
+	padding-bottom: 15px;
+	border-bottom: 5px solid blue;
+	margin-bottom: 30px;
+}
+
+div#profile div.row div.col-md.info.border-left content > * {
+	padding: 0;
+	margin: 0;
+}
+
+div#information {
+	height: 40vh;
+	width: 100%;
+}
+
+div#promo{
+	/*background-color: #151719;*/
+	height: 30vh;
+	width: 100%;
+	color: white;
+	font-family: sans-serif;
+}
+
+div#promo div.container {
+	width: 100%;
+	height: 100%;
+}
+
+div#promo div.container div.row {
+	width: 100%;
+	height: 100%;
+	background-color: #151719;
+	border-radius: 100px;
+}
+
+div#promo div.container div.row div.col-md{
+	margin-top: auto;
+	margin-bottom: auto;
+	text-align: center;
+}
+
+footer {
+	height: 60vh;
+	/*background:#151719;*/
+}
+
+
+@media only screen and (max-width:720px){
+	div#profile {
+		height: 100vh;
+		display: block;
+	}
+	div#information{
+		height: 100vh;
+	}
+	div.row {
+		padding:0;
+		margin: 0;
+	}
+	body div#profile.container {
+		padding-right: 0;
+		padding-left: 0;
+		margin-right: 0;
+		margin-left: 0;
+	}
+	body div#profile div.row div.col-md {
+		padding-left:auto;
+		padding-right: auto;
+		width: 100%;
+	}
+	body div#profile div.row div.col-md.info{
+		padding-left:auto;
+		padding-right: auto;
+		/*margin-top: auto;
+		margin-bottom: auto;*/
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	/*body div#profile div.row div.col-md.picture {
+		background-color: blue;
+		margin: 3em;
+		border-radius: 100px;
+	}*/
+	body div#profile div.row div.col-md.picture img{
+		width: 80%;
+	}
+	div#profile div.row div.col-md.info {
+		margin-top: -2em;
+	}
+	div#information{
+		margin-top: 3em;
+	}
+}
