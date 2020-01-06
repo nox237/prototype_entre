@@ -2,10 +2,7 @@ body {
 	width: 100%;
 	height: 100vh;
 }
-.count{
-	line-height: 100px;
-  	color:black;
-}
+
 div#landing-page {
 	height: 90vh;
 	width: 100%;
@@ -43,17 +40,37 @@ div#landing-page content button {
 div#about {
 	text-align: center;
 	width: 100%;
-	height: 50vh;
+	height: 100vh;
 }
 
-div#about div h1{
+div#about div.container {
+	width: 100%;
+	height: 100%;
+}
+
+div#about div.container div.content {
+	width: 100%;
+	height: 50%;
+}
+
+div#about div.container div.content h1{
 	font-weight: bold;
+}
+
+div#about div.container div.image {
+	width: 100%;
+	height: 50%;
+}
+
+div#about div.container div.image img{
+	width: auto;
+	height: 100%;
 }
 
 div#promote {
 	height: 40vh;
 	width: 100%;
-	background-color: #151719;
+	background-color: #3D72A4;
 	text-align: center;
 	font-family: sans-serif;
 	color: white;
@@ -72,21 +89,79 @@ div#landing-page div button {
 }
 
 div#teacher {
-	height: auto;
+	height: 100vh;
 	width: 100%;
-	text-align: center;
+	background-image: url(../img/teacher.jpeg);
+	background-color: rgba(0,0,0,0.35);
+	background-blend-mode: darken;
+	background-size: cover;
+	background-position: center;
 }
 
-div#teacher div div div button{
-	max-width: 10em;
-	margin-left: auto;
-	margin-right: auto;
+div#teacher div.container div.content div.teacher_promote h1 {
+	color: white;
+	font-weight: bold;
+}
+
+div#teacher div.container div.content div.teacher_promote p {
+	color: rgba(230,230,230,0.9);
+}
+
+div#teacher div.container {
+	width: 100%;
+	height: 100%;
+}
+
+.vertical-center{
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+
+div#teacher div.container div.content {
+	width: 50%;
 }
 
 footer {
-	height: 50vh;
+	height: auto;
 	width: 100%;
 	background-color: #151719;
+}
+
+footer div.container div.row {
+	width: 100%;
+	height: 100%;
+}
+
+footer div.container div.row div.col-md ul {
+	list-style: none;
+}
+
+footer div.container div.row div.col-md {
+	height: 100%;
+	color: rgba(230,230,230,0.9);
+	margin: 0;
+	padding: 0;
+}
+
+footer div.container div.row div.col-md h3 {
+	color: white;
+	font-weight: 700;
+}
+
+footer div.container div.row div.col-md.borderleft{
+	padding-left: 60px;
+	border-left: 1px solid white;
+}
+
+footer div.container div.row div.col-md table tr td.first{
+	padding-right: 6em;
+}
+
+footer div.container p.copyright {
+	color: white;
+	font-family: arial;
+	text-align: center;
 }
 
 @media only screen and (max-width:720px){
@@ -98,8 +173,46 @@ footer {
 		width: 100%;
 		max-width: 100%;
 	}
-	div#teacher {
-		height: auto;
+	
+	div#about div.container {
 		width: 100%;
+		height: 100%;
+		padding-left: 3em;
+		padding-right: 3em;
+	}
+
+	div#about div.container div.content {
+		width: 100%;
+		height: 50%;
+	}
+
+	div#about div.container div.content h1{
+		font-weight: bold;
+	}
+
+	div#about div.container div.image {
+		display: none;
+	}
+	div#teacher {
+		height: 100vh;
+		width: 100%;
+		background-position: left;
+	}
+	div#teacher div.container div.content {
+		width: 100%;
+		padding-left: 3em;
+		padding-right: 3em;
+	}
+	div#promote {
+		height: auto;
+		padding-left: 3em;
+		padding-right: 3em;
+	}
+	footer div.container div.row div.col-md.borderleft{
+		padding-left: 0;
+		border-left: none;
+	}
+	footer div.container div.row {
+		padding-left: 3em;
 	}
 }
