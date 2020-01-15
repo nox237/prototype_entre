@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Welcome user!!</title>
+	<title>Billings</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap core CSS -->
@@ -9,20 +9,80 @@
     <!-- Custom styles-->
     <link rel="stylesheet" type="text/css" href="./css/nav.css">
     <link href="./css/user.css" type="text/css" rel="stylesheet">
-    <script type="text/javascript" src="./js/nav.js"></script>
+	<script type="text/javascript" src="./js/nav.js"></script>
+	<link href="./css/index.css" type="text/css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 <body>
 	<nav id="sidebar" >
 		<div class="container">
 			<div id="burger-btn" onclick="toggleSidebar()">&#9776;</div>
-			<div id="logo">TeachMe</div>
+			<div id="logo">Teach<div class="blue">Me</div></div>
 			<ul>
-				<li>Home</li>
-				<li><a href="./login.html">Login</a></li>
-				<li>About</li>
-				<li>Contact</li>
+				<li><a href="./user.html">Home</a></li>
+				<li><a href="./course.html">Courses</a></li>
+				<li><a href="./teacher.html">Teacher</a></li>
+				<li><a href="./index.html">Logout</a></li>
 			</ul>
 		</div>
 	</nav>
+
+	<div class="jumbotron jumbotron-fluid">
+		<div class="container">
+		  <h1 class="display-4">Billings</h1>
+		  <p class="lead">List of your tuition payments</p>
+		</div>
+	  </div>
+
+	<div class="container">
+		<div class="alert alert-primary" role="alert">
+			Payment Code : 1-24-6963 IDR 250000 Upcoming
+		  </div>
+		  <div class="alert alert-warning" role="alert">
+			Payment Code : 1-96-1230 IDR 200000 Pending
+		  </div>
+		  <div class="alert alert-success" role="alert">
+			Payment Code : 1-20-4686 IDR 120000 Success !!!
+		  </div>
+		  <div class="alert alert-danger" role="alert">
+			Payment Code : 1-05-3123 IDR 150000 Canceled
+		  </div>
+	</div>
+	  
+	  
+	  <br>
+	  <br>
 </body>
+
+<footer>
+	<div class="container">
+		<div class="row pt-4 m-0">
+			<div class="col-md mb-4">
+				<h3>Contents</h3>
+				<table>
+					<tr>
+						<td class="first">Home</td>
+						<td>Login</td>
+					</tr>
+					<tr>
+						<td class="first">About</td>
+						<td>Contact</td>
+					</tr>
+				</table>
+			</div>
+			<div class="col-md borderleft mb-4">
+				<h3>Contacts</h3>
+				<p class="m-0 p-1">info@TeachMe.com</p>
+				<p class="m-0 p-1">+11122223333</p>
+			</div>
+			<div class="col-md borderleft mb-4">
+				<h3>Contacts</h3>
+				<p class="m-0 p-1">info@TeachMe.com</p>
+				<p class="m-0 p-1">+11122223333</p>
+			</div>
+		</div>
+		<p class="pb-4 m-0 copyright">Copyright © 2019 TeachMe</p>
+	</div>
+</footer>	
+
 </html>

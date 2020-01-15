@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Course</title>
+	<title>Upcoming Courses</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap core CSS -->
@@ -9,6 +9,7 @@
     <!-- Custom styles-->
     <link rel="stylesheet" type="text/css" href="./css/nav.css">
 	<link href="./css/user.css" type="text/css" rel="stylesheet">
+	<link href="./css/index.css" type="text/css" rel="stylesheet">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script type="text/javascript" src="./js/nav.js"></script>
 </head>
@@ -16,9 +17,11 @@
 	<nav id="sidebar" >
 		<div class="container">
 			<div id="burger-btn" onclick="toggleSidebar()">&#9776;</div>
-			<div id="logo">TeachMe</div>
+			<div id="logo">Teach<div class="blue">Me</div></div>
 			<ul>
 				<li><a href="./user.html">Home</a></li>
+				<li><a href="./billing.html">Billing</a></li>
+				<li><a href="./teacher.html">Teacher</a></li>
 				<li><a href="./index.html">Logout</a></li>
 			</ul>
 		</div>
@@ -31,45 +34,79 @@
 		</div>
 	  </div>
 
-	<div class="card-deck">
-		<div class="card">
-		  <img class="card-img-top" src="./img/frizzle1.jpg" alt="Card image cap">
-		  <div class="card-body">
-			<h1 class="card-title">Biology</h1>
-			<h5 class="card-title">Valerie Felicity Frizzle</h5>
-			<p class="card-text">Date	: January, 20 2020</p>
-			<p class="card-text">Time	: 15.00-17.00</p>
+	<div class="container">
+		<div class="card-deck">
+			<div class="card">
+			  <img class="card-img-top" src="./img/biology.png" alt="Card image cap" style="min-height: 174px;">
+			  <div class="card-body">
+				<h1 class="card-title">Biology</h1>
+				<h5 class="card-title">Valerie Felicity Frizzle</h5>
+				<p class="card-text">Date	: January, 20 2020</p>
+				<p class="card-text">Time	: 15.00-17.00</p>
+			  </div>
+			  <div class="card-footer">
+				<small class="text-muted">Rating : 4.5/5.0 ★</small>
+			  </div>
+			</div>
+			<div class="card">
+			  <img class="card-img-top" src="./img/physics.jpg" alt="Card image cap" style="min-height: 174px;">
+			  <div class="card-body">
+				<h1 class="card-title">Physics</h1>
+				<h5 class="card-title">Rick Sanchez</h5>
+				<p class="card-text">Date	: January, 22 2020</p>
+				<p class="card-text">Time	: 09.00-11.00</p>
+			  </div>
+			  <div class="card-footer">
+				<small class="text-muted">Rating : 5.0/5.0 ★</small>
+			  </div>
+			</div>
+			<div class="card">
+			  <img class="card-img-top" src="./img/chemistry.png" alt="Card image cap" style="min-height: 174px;">
+			  <div class="card-body">
+				<h1 class="card-title">Chemistry</h1>
+				<h5 class="card-title">Goldenford</h5>
+				<p class="card-text">Date	: January, 24 2020</p>
+				<p class="card-text">Time	: 11.00-13.00</p>
+			  </div>
+			  <div class="card-footer">
+				<small class="text-muted">Rating : 4.3/5.0 ★</small>
+			  </div>
+			</div>
 		  </div>
-		  <div class="card-footer">
-			<small class="text-muted">Rating : 4.5/5.0 ★</small>
-		  </div>
-		</div>
-		<div class="card">
-		  <img class="card-img-top" src="./img/sanchez1.jpg" alt="Card image cap">
-		  <div class="card-body">
-			<h1 class="card-title">Physics</h1>
-			<h5 class="card-title">Rick Sanchez</h5>
-			<p class="card-text">Date	: January, 22 2020</p>
-			<p class="card-text">Time	: 09.00-11.00</p>
-		  </div>
-		  <div class="card-footer">
-			<small class="text-muted">Rating : 5.0/5.0 ★</small>
-		  </div>
-		</div>
-		<div class="card">
-		  <img class="card-img-top" src="./img/MrGoldenfold1.png" alt="Card image cap">
-		  <div class="card-body">
-			<h1 class="card-title">Mathematics</h1>
-			<h5 class="card-title">Goldenford</h5>
-			<p class="card-text">Date	: January, 24 2020</p>
-			<p class="card-text">Time	: 11.00-13.00</p>
-		  </div>
-		  <div class="card-footer">
-			<small class="text-muted">Rating : 4.3/5.0 ★</small>
-		  </div>
-		</div>
-	  </div>
-	
+	</div>
+	<br>
+	<br>
 </body>
+
+<footer>
+	<div class="container">
+		<div class="row pt-4 m-0">
+			<div class="col-md mb-4">
+				<h3>Contents</h3>
+				<table>
+					<tr>
+						<td class="first">Home</td>
+						<td>Login</td>
+					</tr>
+					<tr>
+						<td class="first">About</td>
+						<td>Contact</td>
+					</tr>
+				</table>
+			</div>
+			<div class="col-md borderleft mb-4">
+				<h3>Contacts</h3>
+				<p class="m-0 p-1">info@TeachMe.com</p>
+				<p class="m-0 p-1">+11122223333</p>
+			</div>
+			<div class="col-md borderleft mb-4">
+				<h3>Contacts</h3>
+				<p class="m-0 p-1">info@TeachMe.com</p>
+				<p class="m-0 p-1">+11122223333</p>
+			</div>
+		</div>
+		<p class="pb-4 m-0 copyright">Copyright © 2019 TeachMe</p>
+	</div>
+</footer>
 
 </html>
