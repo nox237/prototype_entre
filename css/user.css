@@ -1,6 +1,13 @@
+
 .row {
 	width: 100%;
 	height: 100%;
+}
+
+.vertical-center{
+	height: 100%;
+	display: flex;
+	align-items: center;
 }
 
 #profile{
@@ -10,23 +17,29 @@
 	/*display: none;*/
 }
 
-div#profile div.row div.col-md.picture {
+div#profile div.row {
+	margin-right: 0;
+	margin-left: 0;
+}
+
+div#profile div.row div.col-md-2.picture {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	margin:0 0 0 auto;
 }
 
-div#profile div.row div.col-md.info {
+div#profile div.row div.col-md-8.info {
 	display: block;
-	margin-top: auto;
-	margin-bottom: auto;
-	/*padding-left: 5em;*/
+	margin:auto auto auto 0;
+
+	padding-left: 5em;
 
 	/*border: 5px solid black;
 	border-radius: 15px;*/
 }
 
-div#profile div.row div.col-md.info h1{
+div#profile div.row div.col-md-8.info h1{
 	font-weight: bold;
 	color: blue;
 	text-align: center;
@@ -36,47 +49,156 @@ div#profile div.row div.col-md.info h1{
 	margin-bottom: 30px;
 }
 
-div#profile div.row div.col-md.info.border-left content > * {
+div#profile div.row div.col-md-8.info.border-left content > * {
 	padding: 0;
 	margin: 0;
 }
 
 div#information {
-	height: 40vh;
+	height: 60vh;
 	width: 100%;
+	margin-bottom: 2em;
 }
 
-div#promo{
-	/*background-color: #151719;*/
-	height: 30vh;
-	width: 100%;
+div#information div.row {
+	margin-left: 0;
+	margin-right: 0;
+	height: 100%;
+}
+
+div#information div.row div.col-md{
+	padding-top: 2em;
+}
+
+div#information div.row div.col-md div.calendar{
+	width: 90%;
+	min-height: 200px;
+	background-color: blue;
+	border-radius: 8px;
+}
+
+div#information div.row div.col-md div.calendar div.row{
+	margin-right: 0;
+    margin-left: 0;
+    height: 100%;
+}
+
+div#information div.row div.col-md div.calendar div.row div.col-md{
+	height: 200px;
+}
+
+div#information div.row div.col-md div.calendar div.row div.col-md.date h1{
+	font-weight: bold;
 	color: white;
-	font-family: sans-serif;
+	font-size: 7.5em;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-div#promo div.container {
-	width: 100%;
-	height: 100%;
+div#information div.row div.col-md div.calendar div.row div.col-md.day{
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-div#promo div.container div.row {
-	width: 100%;
-	height: 100%;
-	background-color: #151719;
-	border-radius: 100px;
+div#information div.row div.col-md div.calendar div.row div.col-md.day > *{
+	/*font-weight: bold;*/
+	color: white;
 }
 
-div#promo div.container div.row div.col-md{
-	margin-top: auto;
-	margin-bottom: auto;
-	text-align: center;
+div#information div.row div.col-md div.calendar div.row div.col-md.day h2{
+	font-weight: bold;
+	/*color: white;*/
+}
+
+div#information div.row div.col-md div.courses{
+	width: 90%;
+	min-height: 200px;
+	background-color: blue;
+	border-radius: 8px; 
+}
+
+div#information div.row div.col-md div.courses div.row div.col-md{
+	height: 200px;
+}
+
+div.custom-border-top {
+	border-top: 5px solid black;
+}
+
+div#information div.row div.col-md div.calendar div.row div.col-md.date h1{
+	font-weight: bold;
+	color: white;
+	font-size: 7.5em;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+div#information div.row div.col-md div.courses div.row{
+	margin-right: 0;
+    margin-left: 0;
+    height: 100%;
+}
+
+div#information	div.row div.col-md div.courses div.row div.col-md.symbol{
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+div#information	div.row div.col-md div.courses div.row div.col-md.text{
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 footer {
-	height: 60vh;
-	/*background:#151719;*/
+	height: auto;
+	width: 100%;
+	background-color: #151719;
 }
 
+footer div.container div.row {
+	width: 100%;
+	height: 100%;
+}
+
+footer div.container div.row div.col-md ul {
+	list-style: none;
+}
+
+footer div.container div.row div.col-md {
+	height: 100%;
+	color: rgba(230,230,230,0.9);
+	margin: 0;
+	padding: 0;
+}
+
+footer div.container div.row div.col-md h3 {
+	color: white;
+	font-weight: 700;
+}
+
+footer div.container div.row div.col-md.borderleft{
+	padding-left: 60px;
+	border-left: 1px solid white;
+}
+
+footer div.container div.row div.col-md table tr td.first{
+	padding-right: 6em;
+}
+
+footer div.container p.copyright {
+	color: white;
+	font-family: arial;
+	text-align: center;
+}
 
 @media only screen and (max-width:720px){
 	div#profile {
@@ -96,14 +218,17 @@ footer {
 		margin-right: 0;
 		margin-left: 0;
 	}
-	body div#profile div.row div.col-md {
+	body div#profile div.row div.col-md-8, body div#profile div.row div.col-md-2 {
 		padding-left:auto;
 		padding-right: auto;
 		width: 100%;
 	}
-	body div#profile div.row div.col-md.info{
-		padding-left:auto;
-		padding-right: auto;
+	body div#profile div.row div.col-md-8.info{
+		padding-left: 0;
+		padding-right: 0;
+		text-align: center;
+		/*padding-left:auto;
+		padding-right: auto;*/
 		/*margin-top: auto;
 		margin-bottom: auto;*/
 		width: 80%;
@@ -111,17 +236,51 @@ footer {
 		margin-right: auto;
 	}
 	/*body div#profile div.row div.col-md.picture {
-		background-color: blue;
+		backgroundiv#information div.row div.col-md div.calendar div.row div.col-md.day{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}d-color: blue;
 		margin: 3em;
 		border-radius: 100px;
 	}*/
+	div.custom-border-top {
+		border-top: none;
+	}
 	body div#profile div.row div.col-md.picture img{
 		width: 80%;
 	}
+	div#information {
+		height: auto;
+	}
 	div#profile div.row div.col-md.info {
 		margin-top: -2em;
+		margin-bottom: 0;
 	}
 	div#information{
-		margin-top: 3em;
+		/*margin-top: 3em;*/
+		margin-bottom: 5em;
+	}
+	div#information div.row div.col-md div.calendar{
+		margin-left: auto;
+		margin-right: auto;
+	}
+	div#information div.row div.col-md div.courses{
+		margin-left: auto;
+		margin-right: auto;
+	}
+	div#information div.row div.col-md div.calendar div.row div.col-md.day{
+		display: none;
+	}
+	div#information div.row div.col-md div.calendar div.row div.col-md.day{
+		font-size: 2em;
+		text-align: center;
+	}
+	footer div.container div.row div.col-md.borderleft{
+		padding-left: 0;
+		border-left: none;
+	}
+	footer div.container div.row {
+		padding-left: 3em;
 	}
 }
